@@ -121,7 +121,7 @@ p { margin: 0 0 1em; }
 .strip-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
 .strip-item { text-align: center; padding: 42px 20px; }
 .strip-item + .strip-item { border-left: 1px solid var(--line); }
-.strip-item svg { width: 40px; height: 40px; color: var(--navy); margin: 0 auto 14px; }
+.strip-item svg { width: 40px; height: 40px; color: var(--red); margin: 0 auto 14px; }
 .strip-item h3 { font-size: 1.02rem; font-weight: 700; margin-bottom: .35em; }
 .strip-item p { font-size: .9rem; color: var(--muted); margin: 0; }
 
