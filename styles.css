@@ -82,9 +82,9 @@ p { margin: 0 0 1em; }
 }
 .hero-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(90deg, rgba(11,22,56,.94) 0%, rgba(11,22,56,.78) 42%, rgba(11,22,56,.25) 100%);
+  background: linear-gradient(90deg, rgba(11,22,56,.82) 0%, rgba(11,22,56,.55) 45%, rgba(11,22,56,.08) 100%);
 }
-.hero-content { position: relative; padding-top: 80px; padding-bottom: 80px; }
+.hero-content { position: relative; padding-top: 80px; padding-bottom: 80px; text-shadow: 0 1px 12px rgba(11,22,56,.55); }
 .hero h1 { color: var(--white); font-size: clamp(2.3rem, 5vw, 3.6rem); font-weight: 800; letter-spacing: -.02em; }
 .hero-lead { max-width: 520px; font-size: 1.08rem; color: rgba(255,255,255,.9); }
 .hero-contact { display: flex; flex-wrap: wrap; gap: 12px 28px; margin-top: 30px; font-weight: 600; }
@@ -243,7 +243,7 @@ p { margin: 0 0 1em; }
 @media (max-width: 560px) {
   .container { padding: 0 16px; }
   .hero { min-height: 480px; }
-  .hero-overlay { background: rgba(11,22,56,.82); }
+  .hero-overlay { background: rgba(11,22,56,.62); }
   .cards { grid-template-columns: 1fr; }
   .strip-grid { grid-template-columns: 1fr; }
   .strip-item + .strip-item { border-left: 0; border-top: 1px solid var(--line); }
