@@ -4,7 +4,8 @@ Website for **GP Storage Solutions**: indoor heated storage and 20' & 40' C-Can 
 
 - **Phone:** 780-518-3615
 - **Email:** gpstoragesolutions@gmail.com
-- **Storage units:** 10715 92 St, Grande Prairie, AB T8V 3W1
+- **Office:** 9845 99 Ave #36, Grande Prairie, AB T8V 0R3
+- **Storage units:** 10715 92 St, Grande Prairie, AB T8V 3W1 (separate location)
 
 It's a single static page (plain HTML and CSS) with no build step and no dependencies.
 
@@ -42,6 +43,7 @@ git push
 All of these are in `index.html`:
 
 - **Phone, email or office hours:** search for the current value (e.g. `780-518-3615`) and replace every match. The phone number also appears in the `tel:` links and the structured data near the top of the file.
+- **Office address:** in the "Our Office" section (text and the Directions to Office link).
 - **Storage unit address:** in the "Storage Unit Location" section and the structured data.
 - **Photos:** put the new image in `images/` and update the matching `src="images/..."`. Keep files under ~300 KB (JPG or WebP) so the page loads quickly.
 - **C-Can sizes and descriptions:** in the "C-Can Rentals" section.
