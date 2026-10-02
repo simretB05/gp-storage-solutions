@@ -11,7 +11,7 @@
   --white: #ffffff;
   --radius: 6px;
   --shadow: 0 6px 24px rgba(15, 29, 74, 0.08);
-  --header-h: 76px;
+  --header-h: 88px;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -52,7 +52,7 @@ p { margin: 0 0 1em; }
 .header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 
 .logo { display: flex; align-items: center; gap: 10px; }
-.logo-img img { height: 52px; width: auto; }
+.logo-img img { height: 66px; width: auto; }
 
 .main-nav { display: flex; gap: 30px; white-space: nowrap; }
 .main-nav a {
@@ -272,5 +272,5 @@ p { margin: 0 0 1em; }
   .why-content, .location-info { padding: 48px 16px; }
   .contact-card { padding: 28px 20px; }
   .banner-inner { flex-direction: column; text-align: center; gap: 16px; }
-  .logo-img img { height: 40px; }
+  .logo-img img { height: 50px; }
 }
