@@ -9,3 +9,10 @@ A static one-page site: `index.html`, `styles.css` and `images/`. It has no buil
 4. (Optional) Custom domains → add the client's domain
 
 Or connect a GitHub repo with Framework preset **None**, build command empty, and output directory `/`.
+
+## SEO / link previews
+The full site address (`https://gp-storage-solutions.pages.dev`) appears in `index.html` (canonical, Open Graph, Twitter and structured-data tags), `robots.txt` and `sitemap.xml`. If the live address changes (e.g. a custom domain), replace it in those three files.
+
+Check link previews after deploying:
+- Facebook / WhatsApp: https://developers.facebook.com/tools/debug/
+- Google structured data: https://search.google.com/test/rich-results
