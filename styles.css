@@ -179,7 +179,7 @@ p { margin: 0 0 1em; }
 .map-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: 59% 62%; transition: transform .4s; }
 .map-wrap:hover img { transform: scale(1.03); }
 .office-note { margin: 22px 0 0; padding: 14px 16px; background: #fff4f5; border-left: 4px solid var(--red); border-radius: 4px; font-size: .95rem; color: var(--ink); }
-.office-note a { color: var(--navy); font-weight: 700; text-decoration: underline; }
+.office-note a { color: var(--navy); font-weight: 700; text-decoration: underline; overflow-wrap: anywhere; }
 .directions-btn { display: inline-block; margin-top: 26px; background: var(--red); color: var(--white); font-weight: 700; padding: 12px 24px; border-radius: var(--radius); transition: background .2s; }
 .directions-btn:hover { background: #a50d26; }
 .location-info { padding: 64px 8% 64px 7%; align-self: center; }
