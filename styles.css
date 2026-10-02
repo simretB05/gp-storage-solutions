@@ -11,7 +11,7 @@
   --white: #ffffff;
   --radius: 6px;
   --shadow: 0 6px 24px rgba(15, 29, 74, 0.08);
-  --header-h: 88px;
+  --header-h: 104px;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -52,7 +52,7 @@ p { margin: 0 0 1em; }
 .header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 
 .logo { display: flex; align-items: center; gap: 10px; }
-.logo-img img { height: 66px; width: auto; }
+.logo-img img { height: 84px; width: auto; }
 
 .main-nav { display: flex; gap: 30px; white-space: nowrap; }
 .main-nav a {
@@ -93,6 +93,7 @@ p { margin: 0 0 1em; }
 .hero-badges { display: flex; flex-wrap: wrap; gap: 10px 22px; }
 .hero-badges span { display: inline-flex; align-items: center; gap: 7px; }
 .hero-badges svg { width: 17px; height: 17px; color: #ff4d63; flex: none; }
+.hero-contact .alt-phone { font-weight: 500; color: rgba(255,255,255,.85); margin-left: -16px; }
 .hero-contact svg { width: 20px; height: 20px; fill: #ff4d63; }
 .hero-price { font-size: 1.1rem; margin: 6px 0 0; color: rgba(255,255,255,.9); }
 .hero-price strong { font-size: 1.9rem; font-weight: 800; color: var(--white); }
@@ -178,6 +179,11 @@ p { margin: 0 0 1em; }
 .price-card .holds { color: var(--ink) !important; background: var(--bg-soft); padding: 10px 12px; border-radius: 4px; }
 .ccan-uses { margin: 4px 0 0; padding-left: 18px; color: var(--ink); font-size: .95rem; }
 .ccan-uses li::marker { color: var(--red); }
+.own-can { max-width: 760px; margin: 28px auto 0; text-align: center; padding: 16px 20px; background: #fff4f5; border: 1px dashed var(--red); border-radius: var(--radius); font-size: 1.02rem; }
+.own-can strong { color: var(--navy); }
+.fact strong small { font-size: .55em; font-weight: 700; color: var(--muted); }
+.ph-label { font-style: normal; font-size: .78rem; font-weight: 600; color: var(--muted); }
+.banner .banner-alt { margin-top: 8px; }
 .fine-print { text-align: center; font-size: .85rem; font-style: italic; color: var(--muted); margin: 22px 0 0; }
 .fine-print.left { text-align: left; margin: 10px 0 0; }
 .ccan-cta { text-align: center; margin: 22px 0 0; color: var(--muted); font-size: 1.02rem; }
@@ -299,7 +305,8 @@ p { margin: 0 0 1em; }
   .why-content { padding: 48px 16px; }
   .contact-card { padding: 28px 20px; }
   .banner-inner { flex-direction: column; text-align: center; gap: 16px; }
-  .logo-img img { height: 50px; }
+  .logo-img img { height: 60px; }
+  :root { --header-h: 84px; }
 }
 
 /* ===== Phone layout: less text, photo visible, swipeable price cards ===== */
@@ -315,7 +322,8 @@ p { margin: 0 0 1em; }
   .hero-info-mobile { display: block; background: var(--navy-deep); color: var(--white); padding: 20px 16px 24px; border-top: 1px solid rgba(255,255,255,.12); }
   .hm-row { display: flex; align-items: center; gap: 12px; font-weight: 600; font-size: 1.05rem; padding: 6px 0; overflow-wrap: anywhere; }
   .hm-row svg { width: 20px; height: 20px; fill: #ff4d63; flex: none; }
-  .hm-hours { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 14px; }
+  .hm-alt { padding: 0 0 6px 32px !important; font-weight: 500 !important; font-size: .95rem !important; color: rgba(255,255,255,.85); }
+.hm-hours { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 14px; }
   .hm-hours p { margin: 0; background: rgba(255,255,255,.07); border-radius: var(--radius); padding: 12px; font-size: .92rem; line-height: 1.5; }
   .hm-hours small { display: block; font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #ff7a8a; margin-bottom: 4px; }
 
