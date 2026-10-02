@@ -49,14 +49,14 @@ p { margin: 0 0 1em; }
   border-bottom: 1px solid var(--line);
   height: var(--header-h);
 }
-.header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 56px; }
 
 .logo { display: flex; align-items: center; gap: 10px; }
 .logo-img img { height: 84px; width: auto; }
 
-.main-nav { display: flex; gap: 30px; white-space: nowrap; }
+.main-nav { display: flex; gap: 22px; white-space: nowrap; margin-left: auto; }
 .main-nav a {
-  position: relative; font-size: .92rem; font-weight: 500; color: var(--ink);
+  position: relative; font-size: .84rem; font-weight: 500; color: var(--ink);
   padding: 6px 0; transition: color .2s;
 }
 .main-nav a::after {
