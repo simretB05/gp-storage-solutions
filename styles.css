@@ -105,21 +105,21 @@ p { margin: 0 0 1em; }
 .storage-grid { display: grid; gap: 36px; }
 .storage-intro { max-width: 640px; margin: 0 auto; text-align: center; }
 .storage-intro p:last-child { color: var(--muted); }
-.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+.cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
 .card {
   background: var(--white); border-radius: var(--radius); overflow: hidden;
   box-shadow: var(--shadow); padding: 8px; display: flex; flex-direction: column;
   transition: transform .25s, box-shadow .25s;
 }
 .card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(15,29,74,.14); }
-.card-img { aspect-ratio: 16 / 10; overflow: hidden; border-radius: 3px; background: var(--bg-soft); }
+.card-img { aspect-ratio: 4 / 3; overflow: hidden; border-radius: 3px; background: var(--bg-soft); }
 .card-img img { width: 100%; height: 100%; object-fit: cover; }
 .card-img-icon { display: grid; place-items: center; background: linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 100%); color: var(--white); }
-.card-img-icon svg { width: 34%; height: auto; }
-.card-body { padding: 20px 16px 14px; display: flex; flex-direction: column; flex: 1; }
-.card-body h3 { font-size: 1.35rem; font-weight: 700; color: var(--ink); }
-.card-body p { font-size: 1rem; color: var(--muted); flex: 1; }
-.card-meta { font-size: .9rem; font-weight: 600; color: var(--navy); border-top: 1px solid var(--line); padding-top: 10px; }
+.card-img-icon svg { width: 55%; height: auto; }
+.card-body { padding: 18px 10px 12px; display: flex; flex-direction: column; flex: 1; }
+.card-body h3 { font-size: 1.15rem; font-weight: 700; color: var(--ink); }
+.card-body p { font-size: .92rem; color: var(--muted); flex: 1; }
+.card-meta { font-size: .85rem; font-weight: 600; color: var(--navy); border-top: 1px solid var(--line); padding-top: 10px; }
 
 /* ===== Why choose us ===== */
 .why { display: grid; grid-template-columns: 1fr 1fr; min-height: 440px; background: var(--bg-soft); }
@@ -227,6 +227,7 @@ p { margin: 0 0 1em; }
 }
 
 @media (max-width: 900px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
   .strip-grid { grid-template-columns: repeat(2, 1fr); }
   .strip-item:nth-child(3) { border-left: 0; }
   .strip-item:nth-child(n+3) { border-top: 1px solid var(--line); }
