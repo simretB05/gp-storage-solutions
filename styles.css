@@ -160,7 +160,9 @@ p { margin: 0 0 1em; }
 .seacan-photo { width: 100%; border-radius: var(--radius); }
 .seacan-intro > div > p { color: var(--muted); }
 .seacan-where { display: flex; align-items: center; gap: 10px; padding: 12px 16px; background: var(--bg-soft); border-radius: var(--radius); color: var(--ink) !important; font-size: .95rem; }
+.seacan-where strong { white-space: nowrap; }
 .seacan-where svg { width: 20px; height: 20px; fill: var(--red); flex: none; }
+.swipe-hint { display: none; }
 .pricing-title { text-align: center; font-size: clamp(1.4rem, 2.5vw, 1.8rem); font-weight: 800; margin-bottom: 28px; }
 .price-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: stretch; }
 .price-card { position: relative; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 28px 26px 26px; display: flex; flex-direction: column; }
@@ -297,4 +299,36 @@ p { margin: 0 0 1em; }
   .contact-card { padding: 28px 20px; }
   .banner-inner { flex-direction: column; text-align: center; gap: 16px; }
   .logo-img img { height: 50px; }
+}
+
+/* ===== Phone layout: less text, photo visible, swipeable price cards ===== */
+@media (max-width: 900px) {
+  .hero { display: block; min-height: 0; background: var(--navy-deep); }
+  .hero::before { content: ''; display: block; height: 260px; background: url('images/seacan-interior.jpg') center 72% / cover no-repeat; }
+  .hero-overlay { display: none; }
+  .hero-content { padding-top: 28px; padding-bottom: 36px; text-shadow: none; }
+}
+
+@media (max-width: 560px) {
+  .hide-mobile { display: none !important; }
+  .hero-lead { display: none; }
+  .hero h1 { font-size: 2rem; }
+  .hero-price { margin-top: 0; }
+  .hero-contact { margin-top: 18px; font-size: 1.1rem; }
+
+  .seacan-body { padding-top: 36px; padding-bottom: 40px; }
+  .seacan-intro { margin-bottom: 36px; }
+  .seacan-intro .eyebrow { display: none; }
+
+  .swipe-hint { display: block; text-align: center; font-size: .85rem; color: var(--muted); margin: -16px 0 4px; }
+  .price-cards { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 14px; max-width: none; margin: 0 -16px; padding: 18px 16px 12px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .price-cards::-webkit-scrollbar { display: none; }
+  .price-card { flex: 0 0 84%; scroll-snap-align: center; padding: 22px 20px; }
+  .price-card > p:not(.price):not(.holds) { display: none; }
+  .size-graphic { height: 26px; margin-bottom: 12px; }
+
+  .fact-tiles { display: none; }
+  .banner-icon { display: none; }
+  .why-image { min-height: 220px; }
+  .footer-places { text-align: center; }
 }
