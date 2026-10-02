@@ -91,6 +91,19 @@ p { margin: 0 0 1em; }
 .hero-contact span { display: inline-flex; align-items: center; gap: 10px; }
 .hero-contact svg { width: 20px; height: 20px; fill: #ff4d63; }
 
+/* Desktop: photo fills the right half only, so it isn't stretched (keeps it sharp) */
+@media (min-width: 901px) {
+  .hero { background: var(--navy-deep); }
+  .hero::before {
+    content: ''; position: absolute; top: 0; right: 0; bottom: 0; width: 50%;
+    background: url('images/hero-ccan.webp') center 55% / cover no-repeat;
+  }
+  .hero-overlay { background: linear-gradient(90deg, var(--navy-deep) 0%, var(--navy-deep) 46%, rgba(11,22,56,.35) 56%, rgba(11,22,56,0) 70%); }
+  .hero-content { text-shadow: none; }
+  .hero-content > * { max-width: min(520px, calc(50vw - 72px)); }
+  .hero-content > h1 { max-width: min(560px, calc(50vw - 64px)); font-size: clamp(2.2rem, 3.6vw, 2.9rem); }
+}
+
 /* ===== Feature strip ===== */
 .feature-strip { background: var(--bg-soft); border-bottom: 1px solid var(--line); }
 .strip-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
