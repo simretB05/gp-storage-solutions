@@ -1,6 +1,6 @@
 # GP Storage Solutions
 
-Website for **GP Storage Solutions**: indoor heated storage and 20' & 40' C-Can rentals in Grande Prairie, Alberta.
+Website for **GP Storage Solutions**: indoor heated storage and sea can storage and heated indoor vehicle storage in Grande Prairie, Alberta.
 
 - **Phone:** 780-518-3615
 - **Email:** gpstoragesolutions@gmail.com
@@ -46,7 +46,7 @@ All of these are in `index.html`:
 - **Office address:** in the "Our Office" section (text and the Directions to Office link).
 - **Storage unit address:** in the "Storage Unit Location" section and the structured data.
 - **Photos:** put the new image in `images/` and update the matching `src="images/..."`. Keep files under ~300 KB (JPG or WebP) so the page loads quickly.
-- **C-Can sizes and descriptions:** in the "C-Can Rentals" section.
+- **Sea can sizes and prices:** in the "Sea Can Storage" section.
 
 ## Site address and link previews
 
