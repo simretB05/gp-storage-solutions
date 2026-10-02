@@ -50,7 +50,7 @@ All of these are in `index.html`:
 
 ## Site address and link previews
 
-The live address appears in several places because WhatsApp, Facebook, X and Google need full URLs:
+The live site is **https://milosgarden.ca**. That address appears in several places because WhatsApp, Facebook, X and Google need full URLs:
 
 - `index.html`: canonical link, Open Graph, Twitter and structured-data tags
 - `robots.txt`
