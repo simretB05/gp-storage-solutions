@@ -6,6 +6,8 @@
     "directory": "."
   },
   "routes": [
+    { "pattern": "gpstoragesolutions.ca", "custom_domain": true },
+    { "pattern": "www.gpstoragesolutions.ca", "custom_domain": true },
     { "pattern": "milosgarden.ca", "custom_domain": true },
     { "pattern": "www.milosgarden.ca", "custom_domain": true }
   ]
