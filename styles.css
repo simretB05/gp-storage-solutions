@@ -77,7 +77,7 @@ p { margin: 0 0 1em; }
   position: relative;
   min-height: 560px;
   display: flex; align-items: center;
-  background: url('images/ccan-yard.webp') center 70% / cover no-repeat;
+  background: url('images/hero-ccan.webp') center 52% / cover no-repeat;
   color: var(--white);
 }
 .hero-overlay {
