@@ -1,18 +1,62 @@
-# GP Storage Solutions – Landing Page
+# GP Storage Solutions
 
-A static one-page site: `index.html`, `styles.css` and `images/`. It has no build step.
+Website for **GP Storage Solutions**: indoor heated storage and 20' & 40' C-Can rentals in Grande Prairie, Alberta.
 
-## Deploy to Cloudflare Pages (free)
-1. Cloudflare dashboard → Workers & Pages → Create → Pages → **Upload assets**
-2. Name the project (e.g. `gp-storage-solutions`) and drag in this whole folder
-3. Deploy → the site goes live at `gp-storage-solutions.pages.dev`
-4. (Optional) Custom domains → add the client's domain
+- **Phone:** 780-518-3615
+- **Email:** gpstoragesolutions@gmail.com
+- **Storage units:** 10715 92 St, Grande Prairie, AB T8V 3W1
 
-Or connect a GitHub repo with Framework preset **None**, build command empty, and output directory `/`.
+It's a single static page (plain HTML and CSS) with no build step and no dependencies.
 
-## SEO / link previews
-The full site address (`https://gp-storage-solutions.pages.dev`) appears in `index.html` (canonical, Open Graph, Twitter and structured-data tags), `robots.txt` and `sitemap.xml`. If the live address changes (e.g. a custom domain), replace it in those three files.
+## Project files
 
-Check link previews after deploying:
-- Facebook / WhatsApp: https://developers.facebook.com/tools/debug/
-- Google structured data: https://search.google.com/test/rich-results
+| File / folder | What it is |
+|---|---|
+| `index.html` | All page content: text, contact details, hours, SEO tags |
+| `styles.css` | All styling. Brand colours are at the top (`--navy`, `--red`) |
+| `images/` | Photos, logo, map and social share image |
+| `images/icons/` | Browser tab and phone home-screen icons |
+| `favicon.ico` | Fallback tab icon for older browsers |
+| `robots.txt`, `sitemap.xml` | Help search engines find the site |
+| `site.webmanifest` | App name and icons when saved to a phone home screen |
+| `wrangler.jsonc`, `.assetsignore` | Cloudflare deployment settings |
+
+## Previewing changes
+
+Open `index.html` in any browser. No server is needed.
+
+## Publishing
+
+The site is hosted on **Cloudflare Workers** and connected to this GitHub repository. Every push to the `main` branch goes live automatically within a minute or two.
+
+```bash
+git add -A
+git commit -m "Describe the change"
+git push
+```
+
+`.assetsignore` keeps the README and config files from being published.
+
+## Common updates
+
+All of these are in `index.html`:
+
+- **Phone, email or office hours:** search for the current value (e.g. `780-518-3615`) and replace every match. The phone number also appears in the `tel:` links and the structured data near the top of the file.
+- **Storage unit address:** in the "Storage Unit Location" section and the structured data.
+- **Photos:** put the new image in `images/` and update the matching `src="images/..."`. Keep files under ~300 KB (JPG or WebP) so the page loads quickly.
+- **C-Can sizes and descriptions:** in the "C-Can Rentals" section.
+
+## Site address and link previews
+
+The live address appears in several places because WhatsApp, Facebook, X and Google need full URLs:
+
+- `index.html`: canonical link, Open Graph, Twitter and structured-data tags
+- `robots.txt`
+- `sitemap.xml`
+
+If the address changes (for example, moving to a custom domain), replace it in all three files.
+
+After publishing, check the results:
+
+- **Facebook / WhatsApp preview:** https://developers.facebook.com/tools/debug/ (click **Scrape Again** to refresh)
+- **Google structured data:** https://search.google.com/test/rich-results
