@@ -88,7 +88,11 @@ p { margin: 0 0 1em; }
 .hero h1 { color: var(--white); font-size: clamp(2.3rem, 5vw, 3.6rem); font-weight: 800; letter-spacing: -.02em; }
 .hero-lead { max-width: 520px; font-size: 1.08rem; color: rgba(255,255,255,.9); }
 .hero-contact { display: flex; flex-wrap: wrap; gap: 12px 28px; margin-top: 30px; font-weight: 600; }
-.hero-contact span { display: inline-flex; align-items: center; gap: 10px; }
+.hero-contact a { display: inline-flex; align-items: center; gap: 10px; }
+.hero-contact a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.hero-badges { display: flex; flex-wrap: wrap; gap: 10px 22px; }
+.hero-badges span { display: inline-flex; align-items: center; gap: 7px; }
+.hero-badges svg { width: 17px; height: 17px; color: #ff4d63; flex: none; }
 .hero-contact svg { width: 20px; height: 20px; fill: #ff4d63; }
 
 /* Desktop: text on a navy panel, photo on the right (shown near its real size so it stays sharp).
