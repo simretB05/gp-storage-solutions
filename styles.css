@@ -163,6 +163,7 @@ p { margin: 0 0 1em; }
 .seacan-where strong { white-space: nowrap; }
 .seacan-where svg { width: 20px; height: 20px; fill: var(--red); flex: none; }
 .swipe-hint { display: none; }
+.hero-info-mobile { display: none; }
 .pricing-title { text-align: center; font-size: clamp(1.4rem, 2.5vw, 1.8rem); font-weight: 800; margin-bottom: 28px; }
 .price-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: stretch; }
 .price-card { position: relative; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 28px 26px 26px; display: flex; flex-direction: column; }
@@ -302,19 +303,18 @@ p { margin: 0 0 1em; }
 }
 
 /* ===== Phone layout: less text, photo visible, swipeable price cards ===== */
-@media (max-width: 900px) {
-  .hero { display: block; min-height: 0; background: var(--navy-deep); }
-  .hero::before { content: ''; display: block; height: 260px; background: url('images/seacan-interior.jpg') center 72% / cover no-repeat; }
-  .hero-overlay { display: none; }
-  .hero-content { padding-top: 28px; padding-bottom: 36px; text-shadow: none; }
-}
-
 @media (max-width: 560px) {
   .hide-mobile { display: none !important; }
-  .hero-lead { display: none; }
-  .hero h1 { font-size: 2rem; }
-  .hero-price { margin-top: 0; }
-  .hero-contact { margin-top: 18px; font-size: 1.1rem; }
+  .hero { min-height: 440px; }
+  .hero-content { padding-top: 48px; padding-bottom: 48px; }
+  .hero h1 { font-size: 2.1rem; }
+
+  .hero-info-mobile { display: block; background: var(--navy-deep); color: var(--white); padding: 20px 16px 24px; border-top: 1px solid rgba(255,255,255,.12); }
+  .hm-row { display: flex; align-items: center; gap: 12px; font-weight: 600; font-size: 1.05rem; padding: 6px 0; overflow-wrap: anywhere; }
+  .hm-row svg { width: 20px; height: 20px; fill: #ff4d63; flex: none; }
+  .hm-hours { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 14px; }
+  .hm-hours p { margin: 0; background: rgba(255,255,255,.07); border-radius: var(--radius); padding: 12px; font-size: .92rem; line-height: 1.5; }
+  .hm-hours small { display: block; font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #ff7a8a; margin-bottom: 4px; }
 
   .seacan-body { padding-top: 36px; padding-bottom: 40px; }
   .seacan-intro { margin-bottom: 36px; }
